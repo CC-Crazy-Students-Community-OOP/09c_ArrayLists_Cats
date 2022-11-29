@@ -9,10 +9,10 @@ public class App {
 		// // out(cat.getAttributes());
 		
 		//cat1 / cat2 .. more of the same ...DRY
-		for (int i = 0; i < 10; i++) 
-		{
-			new Cat("someone_" + i); // Objekt, aber KEINE Referenz!
-		}
+		// for (int i = 0; i < 10; i++) 
+		// {
+		// 	new Cat("someone_" + i); // Objekt, aber KEINE Referenz!
+		// }
 		
 		String [] nameArr = { "Grizabella", "Alonzo", "RumTumTugger", "Suzanne" };
 		ArrayList<Cat> objList = new ArrayList<>();
@@ -20,8 +20,8 @@ public class App {
 		out( c( "#y" ) + "---Cats Array:-----------------------------" );
 		for ( int i = 0; i < nameArr.length - 1; i++ ){
 			objList.add( new Cat( nameArr[ i ] ) );
-			objList.add( new Cat( "someone_" + i ) );
 			out( t( 1 ) + c( "#r" ) +  "Cats: " + c( "#g" ) +  objList );
+			objList.add( new Cat( "someone_" + i ) );
 		}
 
 		out( c( "#y" ) + "---Cats:-----------------------------------" );
